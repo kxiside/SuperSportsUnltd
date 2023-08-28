@@ -27,4 +27,14 @@ For the utmost clarity when researching the finest supersport bikes in the world
         - be able to filter through different color styles
         - play different videos on the homepage over a logo
 
-        
+### Wireframes
+
+![ScreenShot](SSUimg/Homepage.jpg)
+![ScreenShot](SSUimg/showcase.jpg)
+![ScreenShot](SSUimg/WishList.jpg)
+![ScreenShot](SSUimg/Reviews.jpg)
+![ScreenShot](SSUimg/Details.jpg)
+
+### ERD
+
+![ScreenShot](SSUimg/ERD.jpg)
