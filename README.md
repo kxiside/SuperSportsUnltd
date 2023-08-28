@@ -37,4 +37,4 @@ For the utmost clarity when researching the finest supersport bikes in the world
 
 ### ERD
 
-![ScreenShot](SSUimg/ERD.jpg)
+![ScreenShot](SSUimg/ERD.jpeg)
