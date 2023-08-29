@@ -1,0 +1,17 @@
+<%- include('./partials/header') %>
+<%- include('./partials/nav') %>
+
+<div class="container-md">
+    <ul>
+        <% fruits.forEach(fruit => {%>
+            <li>
+                <a href="/fruits/<%= fruit._id %>">
+                    <%= fruit.name %>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+</div>
+
+
+<%- include('./partials/footer') %>
