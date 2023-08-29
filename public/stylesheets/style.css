@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap'); */
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 5%;
 }
 
 .nav_links {
@@ -58,6 +58,6 @@ button:hover {
 }
 
 .superHeader {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
