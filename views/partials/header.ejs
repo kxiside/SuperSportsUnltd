@@ -10,13 +10,16 @@
 </head>
 <body >
   <header>
-    <p class="superHeader" >Super Sports Unlimited</p>
+    <p class="superHeader" >SuperSports Unltd.</p>
     <nav>
       <ul class="nav_links">
+        <% if (user) {%>
         <li><a href="#">Showcase</a></li>
         <li><a href="#">Wishlist</a></li>
       </ul>
     </nav>
-    <a class="cta" href="#"><button>Log In</button></a>
+    <% } else { %>
+    <a class="cta" href="/auth/google"><button>Log In</button><img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <% } %>
   </header>
   <main class="bg">

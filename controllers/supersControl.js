@@ -1,10 +1,14 @@
 const Super = require('../models/super')
 
-module.exports = {
-    index
+// new
+function newSuper(req, res) {
+    console.log('new route')
+    res.send('new supers page')
 }
+// create
+// index
 
-async function index(req, res) {
-    const supers = await Super.find({})
-    res.render('index', { supers })
+// export functions
+module.exports = {
+    new: newSuper
 }
