@@ -7,8 +7,11 @@ function newSuper(req, res) {
 }
 // create
 // index
-
+function index(req, res) {
+    res.render('supers/index')
+}
 // export functions
 module.exports = {
-    new: newSuper
+    new: newSuper,
+    index
 }

@@ -8,7 +8,9 @@
 }
 
 main {
-  background-image: url('/public/img/showroom.jpeg');
+  background-image: url('/img/showroom.jpeg');
+  background-size: cover;
+  height: 50vh;
 }
 
 

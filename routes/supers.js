@@ -9,7 +9,7 @@ router.get('/new', superCtrl.new)
 // CREATE
 
 // INDEX
-
+router.get('/', superCtrl.index)
 // SHOW
 
 // EDIT
