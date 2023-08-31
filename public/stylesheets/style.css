@@ -7,16 +7,14 @@
   background-color: #24252a;
 }
 
-html { 
+body { 
   background: url('/img/showroom.jpeg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: contain;
+  background-size: 100%vh;
   background-attachment: fixed;
 }
-
-
 
 
 li, a, button {
@@ -32,6 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 5%;
+  background-color: #24252a;
 }
 
 .nav_links {
@@ -66,6 +65,50 @@ button:hover {
 
 .superHeader {
   font-size: 1.5rem;
+  color: white;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.bikeHome {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  justify-content: space-evenly
+}
+
+.logo {
+  width: 100px;
+  
+}
+
+.bikeCase {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: flex-start;
+  border: solid black;
+  background-color: whitesmoke;
+  width: fit-content;
+  
+}
+
+.bikeImg {
+ 
+}
+
+.bikeTxt {
+  align-items: center;
+  inline-size: 500px;
+  padding-left: 20px;
+}
+
+.specsClk {
+  
 }
 
 
