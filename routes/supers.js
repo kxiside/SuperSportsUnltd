@@ -6,12 +6,11 @@ const superCtrl = require('../controllers/supersControl')
 // NEW /supers/new
 router.get('/new', superCtrl.new)
 
-// CREATE
-
 // INDEX
 router.get('/', superCtrl.index)
-// SHOW
 
+// SHOW
+router.get('/:id', superCtrl.show)
 // EDIT
 
 // UPDATE

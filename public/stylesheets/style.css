@@ -7,11 +7,16 @@
   background-color: #24252a;
 }
 
-main {
-  background-image: url('/img/showroom.jpeg');
-  background-size: cover;
-  height: 50vh;
+html { 
+  background: url('/img/showroom.jpeg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
 }
+
+
 
 
 li, a, button {
@@ -62,4 +67,6 @@ button:hover {
 .superHeader {
   font-size: 1.5rem;
 }
+
+
 

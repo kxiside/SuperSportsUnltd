@@ -11,7 +11,6 @@ const session = require('express-session')
 const passport = require('passport')
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const supersRouter = require('./routes/supers');
 
 const app = express();
@@ -39,7 +38,6 @@ app.use(function (req, res, next) {
 })
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/supers', supersRouter);
 
 // catch 404 and forward to error handler
