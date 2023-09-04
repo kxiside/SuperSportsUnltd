@@ -111,5 +111,19 @@ h2 {
   
 }
 
+#show {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 300px;
+
+}
+
+.show-txt {
+  border: solid black;
+  background-color: whitesmoke;
+}
+
 
 

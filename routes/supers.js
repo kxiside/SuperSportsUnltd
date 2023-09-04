@@ -11,6 +11,9 @@ router.get('/', superCtrl.index)
 
 // SHOW
 router.get('/:id', superCtrl.show)
+
+// CREATE
+router.post('/supers', )
 // EDIT
 
 // UPDATE

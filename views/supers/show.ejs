@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+
+<section id="show">
+<div class="show-img"><img src="<%= superss.imgShow %>" alt="showBike" width="400px"></div>
+<h3><%= superss.model %></h3>
+<div class="show-txt">Enginge Capacity: <%= superss.cc %>cc</div>
+<div class="show-txt">Horsepower: <%= superss.hp %></div>
+<div class="show-txt">Torque: <%= superss.tq %>lb-ft</div>
+<div class="show-txt">Price: $<%= superss.price %></div>
+</section>
+
+<%- include('../partials/footer') %>
