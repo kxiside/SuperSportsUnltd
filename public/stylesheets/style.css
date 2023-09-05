@@ -114,7 +114,7 @@ h2 {
 
 .show-txt {
   border: solid black;
-  background-color: whitesmoke;
+  background-color: lightgrey;
 }
 
 .form {
@@ -124,6 +124,19 @@ h2 {
 
 .add {
   background: grey;
+}
+
+.formNew {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  padding-left: 825px;
+  padding-top:250px;
+}
+
+.val {
+  display: flex;
+  justify-content: center;
 }
 
 

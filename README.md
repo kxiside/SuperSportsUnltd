@@ -31,7 +31,6 @@ For the utmost clarity when researching the finest supersport bikes in the world
 
 ![ScreenShot](public/images/SSUimg/Homepage.jpg)
 ![ScreenShot](public/images/SSUimg/showcase.jpg)
-![ScreenShot](public/images/SSUimg/WishList.jpg)
 ![ScreenShot](public/images/SSUimg/Reviews.jpg)
 ![ScreenShot](public/images/SSUimg/Details.jpg)
 
