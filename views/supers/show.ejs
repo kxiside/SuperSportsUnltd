@@ -7,6 +7,45 @@
 <div class="show-txt">Horsepower: <%= superss.hp %></div>
 <div class="show-txt">Torque: <%= superss.tq %>lb-ft</div>
 <div class="show-txt">Price: $<%= superss.price %></div>
+<br><h4>Comments</h4>
+<form class="form" method="POST" action="/supers/<%= superss._id %>/reviews">
+<label>comment: </label>
+<textarea name="content" ></textarea>
+<label>Desire:</label>
+<select name="rating">
+    <option value="1">Not interested</option>
+    <option value="2">Slightly interested</option>
+    <option value="3">Growing on me</option>
+    <option value="4">On my list</option>
+    <option value="5">Stole my heart</option>
+</select>
+<input class="add" type="submit" value="add comment">
+</form>
 </section>
+<section>
+    <% if (superss.reviews.length) { %>
+        <table class="show-txt">
+            <thead>
+                <tr>
+                    <th class="show-txt">Comment -</th>
+                    <th class="show-txt">Desire</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% let total = 0 %>
+                <% superss.reviews.forEach(function(s) { %>
+                    <% total += s.rating %>
+                    <tr>
+                        <td class="show-txt"><%= s.content %></td>
+                        <td class="show-txt"><%= s.rating %></td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+        <% } else { %>
+            <h5>No Reviews Yet</h5>
+        <% }; %>
+</section>
+
 
 <%- include('../partials/footer') %>

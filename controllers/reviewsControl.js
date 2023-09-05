@@ -5,12 +5,13 @@ module.exports = {
 }
 
 async function create(req, res) {
-    const super = await Super.findById(req.params.id)
-    super.reviews.push(req.body)
+    const superss = await Super.findById(req.params.id)
+    superss.reviews.push(req.body)
     try {
-        await super.save()
+        await superss.save()
     } catch (err) {
         console.log(err)
     }
-    res.redirect(`/supers/${super._id}`)
+    res.redirect(`/supers/${superss._id}`)
 }
+

@@ -97,18 +97,10 @@ h2 {
   
 }
 
-.bikeImg {
- 
-}
-
 .bikeTxt {
   align-items: center;
   inline-size: 500px;
   padding-left: 20px;
-}
-
-.specsClk {
-  
 }
 
 #show {
@@ -123,6 +115,15 @@ h2 {
 .show-txt {
   border: solid black;
   background-color: whitesmoke;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add {
+  background: grey;
 }
 
 

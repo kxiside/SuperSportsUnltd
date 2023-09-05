@@ -1,6 +1,13 @@
 const Super = require('../models/super')
 
-
+// export functions
+module.exports = {
+    index,
+    show,
+    new: newSuper,
+    delete: deleteOne,
+    create
+}
 
 
 
@@ -18,15 +25,37 @@ async function show(req, res) {
 
 // new
 function newSuper(req, res) {
-    console.log('new route')
     res.render('supers/new')
 }
 
-
-
-// export functions
-module.exports = {
-    new: newSuper,
-    index,
-    show
+function deleteOne(req, res) {
+    Super.findById(req.params.id)
+    .then(supers => {
+        if(req.user && supers.owner == req.user.id) {
+            return supers.deleteOne()
+        } else {
+            res.send('error')
+        }
+    }) 
+    .then(data => {
+        console.log(data)
+        res.redirect('/supers')
+    })
+    .catch(error => console.error)
 }
+
+async function create(req, res) {
+    for (let key in req.body) {
+        if (req.body[key] === '') delete req.body[key]
+    }
+    try {
+        const superss = await Super.create(req.body)
+        res.redirect(`/supers`)
+    } catch (err) {
+        console.log(err)
+        res.render('supers/new', { errorMsg: err.message })
+    }
+}
+
+
+

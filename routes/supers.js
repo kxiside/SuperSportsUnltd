@@ -12,13 +12,10 @@ router.get('/', superCtrl.index)
 // SHOW
 router.get('/:id', superCtrl.show)
 
-// CREATE
-router.post('/supers', )
-// EDIT
-
-// UPDATE
-
 // DELETE
+router.delete('/:id', superCtrl.delete)
 
+// CREATE
+router.post('/', superCtrl.create)
 // EXPORT
 module.exports = router
